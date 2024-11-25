@@ -14,3 +14,5 @@ This application has a HTML UI and a REST API.
 Use Postgresql.
 
 Contributors: trainer 1
+
+branch merge 1
