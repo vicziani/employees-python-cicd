@@ -8,3 +8,5 @@ This is a Python web application with Flask, managing employees.
 * VCS: GitHub
 
 Employee has an id and a name.
+
+This application has a HTML UI and a REST API.
