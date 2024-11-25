@@ -2,4 +2,5 @@
 
 This is a Python web application with Flask, managing employees.
 
-Language: Python 3
+* Language: Python 3
+* Framework: Flask
