@@ -12,9 +12,3 @@ Employee has an id and a name.
 This application has a HTML UI and a REST API.
 
 Use Postgresql.
-
-Contributors: trainer 1
-
-branch merge 7
-
-change 1
