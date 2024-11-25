@@ -6,3 +6,5 @@ This is a Python web application with Flask, managing employees.
 * Framework: Flask
 * Web application
 * VCS: GitHub
+
+Employee has an id and a name.
