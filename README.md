@@ -10,3 +10,5 @@ This is a Python web application with Flask, managing employees.
 Employee has an id and a name.
 
 This application has a HTML UI and a REST API.
+
+Use MySQL.
