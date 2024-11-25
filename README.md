@@ -7,10 +7,8 @@ This is a Python web application with Flask, managing employees.
 * Web application
 * VCS: GitHub
 
-Employee has an id and a name.
+Employee entity has an id and a name.
 
 This application has a HTML UI and a REST API.
 
-Use Postgresql.
-
-change1-1
+nUse Postgresql.
