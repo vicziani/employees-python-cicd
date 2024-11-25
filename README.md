@@ -12,3 +12,5 @@ Employee entity has an id and a name.
 This application has a HTML UI and a REST API.
 
 Use Postgresql.
+
+Demo 2-2.
