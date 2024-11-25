@@ -13,4 +13,4 @@ This application has a HTML UI and a REST API.
 
 Use Postgresql.
 
-Demo.
+Demo 2.
