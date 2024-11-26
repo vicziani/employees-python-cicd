@@ -1,0 +1,31 @@
+name: Employees Release
+on:
+    push:
+      tags:
+        - 'v[0-9]+.[0-9]+.[0-9]+'
+    workflow_dispatch:
+
+jobs:
+  build:
+      name: Build binary
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+      steps:
+          - uses: actions/checkout@v4
+          - uses: actions/setup-python@v5
+            with:
+              python-version: '3.13'
+              cache: 'pip' # caching pip dependencies
+          - name: Install dependencies
+            run: |
+              python -m pip install --upgrade pip
+              python -m pip install -c constraints.txt .[dev]
+          - name: Build
+            run: python -m build
+          - name: Create release
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              tag: ${{ github.ref_name }}
+            run: gh release create "$tag" --repo="$GITHUB_REPOSITORY" --generate-notes --title="${tag#v}" dist/*.whl dist/*.tar.gz                         
+    

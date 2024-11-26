@@ -6,3 +6,4 @@ build
 .ruff_cache
 ruff_report.json
 site
+dist
