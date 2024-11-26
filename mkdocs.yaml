@@ -1,0 +1,8 @@
+site_name: Employees
+docs_dir: docs
+plugins:
+    - plantuml:
+        puml_url: https://www.plantuml.com/plantuml/
+        num_workers: 8
+        theme:
+          enabled: false

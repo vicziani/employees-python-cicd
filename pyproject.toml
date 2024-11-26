@@ -22,5 +22,8 @@ dev = [
     "selenium",
     "webdriver-manager",
     "ruff",
-    "pre-commit"
+    "pre-commit",
+    "pdoc",
+    "mkdocs",
+    "mkdocs_puml"
 ]
