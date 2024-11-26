@@ -17,7 +17,9 @@ def test_create():
     if driver_type == "ChromeDriver":
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     if driver_type == "EdgeDriver":
-        driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
+        driver = webdriver.Edge(
+            service=EdgeService(EdgeChromiumDriverManager().install())
+        )
     elif driver_type == "RemoteWebDriver":
         command_executor = os.getenv("SELENIUM_HUB_URL", "http://localhost:4444/wd/hub")
         options = webdriver.ChromeOptions()

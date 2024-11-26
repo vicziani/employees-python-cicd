@@ -20,5 +20,7 @@ dev = [
     "pytest-mock",
     "requests",
     "selenium",
-    "webdriver-manager"
+    "webdriver-manager",
+    "ruff",
+    "pre-commit"
 ]

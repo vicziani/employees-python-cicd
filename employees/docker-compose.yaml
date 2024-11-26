@@ -96,4 +96,3 @@ services:
       SELENIUM_DRIVER: RemoteWebDriver
       SELENIUM_HUB_URL: http://selenium-hub:4444/wd/hub
     command: python -m pytest -v test/e2e/test_employees_ui.py
-
