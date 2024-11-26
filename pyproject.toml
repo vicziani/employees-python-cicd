@@ -13,3 +13,12 @@ dependencies = [
     "Flask-WTF",
     "gunicorn"
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-mock",
+    "requests",
+    "selenium",
+    "webdriver-manager"
+]
