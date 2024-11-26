@@ -10,5 +10,6 @@ version = "1.0.0"
 dependencies = [
     "Flask",
     "psycopg[binary,pool]",
-    "Flask-WTF"
+    "Flask-WTF",
+    "gunicorn"
 ]
